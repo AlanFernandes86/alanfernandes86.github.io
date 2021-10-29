@@ -10,6 +10,14 @@ h1 {
   font-family: 'Ubuntu', sans-serif;
 }
 
+h3 {
+    margin-bottom: 0px;
+}
+
+hr{
+    margin-bottom: 18px;
+}
+
 #foto-perfil {
   border-radius: 50%;
   border: solid 4px;
@@ -17,3 +25,9 @@ h1 {
   border-color: #1B263B;
   width: 200px;
 }
+
+.destaque{
+    font-size: large;
+    color: #778DA9;
+}
+
