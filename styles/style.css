@@ -4,10 +4,12 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #0D1B2A;
   color: #E0E1DD;
+  padding: 5%;
 }
 
-h1 {
+h1.meu-nome {
   font-family: 'Ubuntu', sans-serif;
+  text-align: center;
 }
 
 h3 {
@@ -20,10 +22,21 @@ hr{
 
 #foto-perfil {
   border-radius: 50%;
-  border: solid 4px;
-  padding: 8px;
-  border-color: #1B263B;
-  width: 200px;
+  padding: 5px;
+  background-color: whitesmoke;
+  height: 250px;
+  float: left;
+}
+
+.image-container{
+    height: 260px;
+    position: relative;
+}
+
+.descricao{
+    position: absolute;
+    top: 10%;
+    left: 250px;    
 }
 
 .destaque{
@@ -49,4 +62,16 @@ a{
 a:hover{
     color: #415A77;
 }
+
+ul li:nth-child(odd){
+    list-style: square;
+    color: #778DA9;
+}
+
+/* div {
+    border: 2px solid magenta;
+} */
+
+
+
 
