@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: rgb(253, 251, 251);
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  margin: 8px 0 8px 0;
+}
+
+main{
+  margin: 70px 3% 20px 3%;
+}
+
+#cabecalho {
+  font-family: Open Sans, sans-serif;
+  font-size: medium;
+  height: 60px;
+  width: 100%;
+  padding-left: 3%;
+  color: whitesmoke;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.photo-section{
+  position: relative;
+  z-index: 0;
+}
+
+#minha_foto {
+  width: 200px;
+}
+
+#trybe_logo{
+  width: 200px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+#link-trybe{
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  text-decoration: none;
+  color: green;
+}
+
+#link-trybe:hover{
+  color: darkgreen;
+}
+
+.new-window-info{
+  font-size: smaller;
+  font-style: italic;
+}
+
+#licoes_aprendidas {
+  line-height: 22px;
+}
+
+#licoes_a_aprender {
+  line-height: 22px;
+}
+
+#requisitos_projeto {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: small;
+}
+
+#requisitos_projeto td , #requisitos_projeto th {
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#requisitos_projeto td:nth-child( 2 ) {
+  text-align: center;
+}
+
+section , aside , div {
+  margin: 8px 0;
+  padding: 16px;
+  border: 1px solid black;
+}
+
+.requisito-15-content {
+  display: block;
+}
+
+.lado-esquerdo {
+  width: 33%;
+  display: inline-block;
+}
+
+.lado-direito {
+  vertical-align: top;
+  width: 33%;
+  display: inline-block;
+}
+
+aside{
+  width: 23%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+#rodape{
+  font-family: Open Sans, sans-serif;
+  font-size: small;
+  width: 100%;
+  padding: 10px 0 20px 0;
+  color: whitesmoke;
+  background-color: black;
+  text-align: center;
+}
