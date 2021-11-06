@@ -8,7 +8,25 @@ body {
 }
 
 h1{
+  width: 30%;
   margin: 8px 0 8px 0;
+  display: inline-block;
+}
+
+nav{
+  display: inline-block;
+  text-align: right;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 0 16px 0 16px;
+}
+
+nav a:hover{
+  color: green;
 }
 
 main{
@@ -90,24 +108,26 @@ section , aside , div {
   border: 1px solid black;
 }
 
-.requisito-15-content {
-  display: block;
-}
-
 .lado-esquerdo {
   width: 33%;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .lado-direito {
-  vertical-align: top;
+  vertical-align: middle;
   width: 33%;
   display: inline-block;
+}
+
+p {
+  text-align: justify;
+  text-indent: 24px;
 }
 
 aside{
   width: 23%;
-  vertical-align: top;
+  vertical-align: middle;
   display: inline-block;
 }
 
