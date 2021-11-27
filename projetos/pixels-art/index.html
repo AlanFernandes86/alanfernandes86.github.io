@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paleta de Cores</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Paleta de Cores</h1>
+
+      <ul id="color-palette">
+        <li class="color color-black selected"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+        <li class="color"></li>
+      </ul>
+    </section>
+
+    <!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number -->
+    <section>
+      <!-- <input type="number" id="input" min="5" max="50" required />
+      <span id="input-vazio">Não pode ser vazio!</span>
+      <div class="button-green" id="teste">teste</div> -->
+
+      <div id="clear-board" class="button-green">Limpar</div>
+      <input type="number" id="board-size" min="1" min="5" max="50" required />
+      <div id="generate-board" class="button-green">VQV</div>
+    </section>
+
+    <section id="pixel-board"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

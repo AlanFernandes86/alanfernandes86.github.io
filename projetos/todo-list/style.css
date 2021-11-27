@@ -1,0 +1,18 @@
+/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-decoration */
+.completed {
+  text-decoration: line-through solid;
+  text-decoration-color: black;
+}
+
+#lista-tarefas li {
+  width: fit-content;
+  cursor: pointer;
+}
+
+#lista-tarefas li:hover {
+  opacity: 0.8;
+}
+
+.selected {
+  background-color: gray;
+}

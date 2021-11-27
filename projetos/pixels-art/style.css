@@ -1,0 +1,94 @@
+#color-palette {
+  margin: 0;
+  padding-inline-start: 0;
+  line-height: 0;
+}
+
+.color {
+  width: 40px;
+  height: 40px;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+
+.color:hover {
+  cursor: pointer;
+}
+
+.color-cyan {
+  background-color: cyan;
+}
+
+.color-magenta {
+  background-color: magenta;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-black {
+  background-color: black;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: white;
+}
+
+#pixel-board {
+  margin-top: 16px;
+}
+
+#pixel-board div {
+  line-height: 0;
+}
+
+.selected {
+  border-radius: 4px;
+}
+
+.button-green {
+  color: white;
+  background-color: green;
+  width: fit-content;
+  padding: 4px;
+  border-radius: 4px;
+  transition: opacity 0.5s;
+}
+
+.button-green:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button-green:active {
+  transition: opacity 0s;
+  opacity: 0.6;
+}
+
+#board-size , #generate-board , #clear-board {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+#board-size {
+  margin-left: 16px;
+  padding: 4px;
+}
+
+#submit-board {
+  display: none;
+}
+
+#input-vazio {
+  display: none;
+  color: red;
+  font-size: 8px;
+  font-style: italic;
+}
