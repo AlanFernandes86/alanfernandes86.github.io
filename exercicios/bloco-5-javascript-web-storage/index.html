@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- https://www.w3schools.com/icons/ -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <title>JavaScript - Web Storage</title>
+  </head>
+  <body>
+    <main>
+      <section class="title">
+        <h1>Lorem Ipsum</h1>
+        <p>
+          'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit...'
+        </p>
+        <p>
+          'There is no one who loves pain itself, who seeks after it and wants
+          to have it, simply because it is pain...'
+        </p>
+      </section>
+      <section class="text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna
+          odio, ornare nec erat a, efficitur pharetra odio. Duis tristique leo
+          purus, sed convallis nulla euismod sed. Morbi ac risus dolor. Integer
+          lacinia, justo vel mattis facilisis, mauris lacus sagittis erat, at
+          elementum mauris arcu nec nisl. Donec in arcu non nulla placerat
+          fermentum et quis sem. Sed viverra condimentum augue vel pellentesque.
+          Sed rhoncus commodo tortor. Donec euismod mollis dui, eu luctus
+          ligula. Proin ullamcorper tortor ut ex pellentesque scelerisque vitae
+          sit amet magna. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Praesent a commodo dolor. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Nulla tincidunt, diam sit amet luctus
+          suscipit, diam massa lacinia nisi, nec pharetra ligula arcu in magna.
+          Nam sagittis libero quis lorem ultricies rutrum.
+        </p>
+
+        <p>
+          Curabitur quis porta urna, ut ullamcorper turpis. Donec vulputate
+          posuere erat, in viverra mauris cursus quis. Cras lorem nulla,
+          venenatis a odio sed, consectetur accumsan quam. In lobortis ac tellus
+          non elementum. Integer aliquet elit ornare felis ullamcorper, quis
+          aliquet mi sodales. Vestibulum ante ipsum primis in faucibus orci
+          luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Pellentesque varius, sem vel imperdiet
+          mattis, eros eros auctor quam, ac ultricies lacus metus ut lectus.
+          Curabitur eu pretium orci. Nulla tristique, enim id faucibus
+          fringilla, metus nisl gravida odio, a placerat lorem dolor ac elit.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Phasellus iaculis erat tempor suscipit
+          convallis.
+        </p>
+      </section>
+    </main>
+    <aside>
+      <header>
+        <h3>Painel de controle</h3>
+        <ul id="menu">
+          <li
+            class="menu-item"
+            id="menu-background-color"
+            section="section-background-color"
+          >
+            Alterar cor do fundo
+          </li>
+          <li
+            class="menu-item"
+            id="menu-text-color"
+            section="section-text-color"
+          >
+            Cor do texto
+          </li>
+          <li class="menu-item" id="menu-font-size" section="section-font-size">
+            Tamanho da fonte
+          </li>
+          <li
+            class="menu-item"
+            id="menu-line-height"
+            section="section-line-height"
+          >
+            Espaço entre linhas
+          </li>
+          <li class="menu-item" id="menu-font-type" section="section-font-type">
+            Tipo de fonte
+          </li>
+        </ul>
+      </header>
+
+      <section id="section-background-color">
+        <p class="inline-block">Selecione a cor de fundo</p>
+        <div id="color-picker" class="inline-block"></div>
+        <input type="color" id="color-picker-input" />
+      </section>
+
+      <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color
+          https://www.w3schools.com/tags/att_input_type_color.asp -->
+      <section id="section-text-color">
+        <label for="title-color">Cor do título</label>
+        <input type="color" id="title-color" />
+        <br /><br />
+        <label for="subtitle-color">Cor do subtítulo</label>
+        <input type="color" id="subtitle-color" />
+        <br /><br />
+        <label for="text-color">Cor do texto</label>
+        <input type="color" id="text-color" />
+      </section>
+
+      <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+      <section id="section-font-size">
+        <label for="title-size" id="label-title-size">Tamanho do título</label>
+        <input type="range" id="title-size" min="02" max="99" /><span
+          >10px</span
+        >
+        <br /><br />
+        <label for="subtitle-size" id="label-subtitle-size"
+          >Tamanho do subtítulo
+        </label>
+        <input type="range" id="subtitle-size" min="02" max="99" /><span
+          >10px</span
+        >
+        <br /><br />
+        <label for="text-size" id="label-text-size">Tamanho do texto </label>
+        <input type="range" id="text-size" min="02" max="99" /><span>10px</span>
+      </section>
+
+      <section id="section-line-height">
+        <label>Espaçamento entre linhas</label>
+        <p>
+          <i class="fas fa-minus" id="minus-line-height"></i>
+          <span id="line-height-value">1</span>
+          <i class="fas fa-plus" id="plus-line-height"></i>
+        </p>
+      </section>
+
+      <section id="section-font-type">
+        <label for="select-font-family">Fonte do texto</label>
+        <br />
+        <select name="fonts" id="select-font-family"></select>
+      </section>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>

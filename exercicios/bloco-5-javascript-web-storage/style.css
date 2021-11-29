@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+body {
+  margin: auto;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  width: 1080px;
+  text-align: center;
+}
+
+main {
+  display: inline-block;
+  width: 70%;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 1%;
+}
+aside {
+  text-align: right;
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+}
+
+aside header {
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
+
+aside h3 {
+  padding-right: 4px;
+  border-right: 2px solid white;
+}
+
+aside ul {
+  margin-top: 1em;
+  padding-inline-start: 0px;
+}
+
+.menu-item {
+  padding: 0;
+  list-style: none;
+  font-size: 0.8em;
+  margin-bottom: 8px;
+}
+
+.menu-item:hover {
+  color: rgb(250, 136, 250);
+  cursor: pointer;
+}
+
+main section {
+  margin-bottom: 2em;
+}
+
+.title h1 {
+  text-align: center;
+}
+
+.title p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-align */
+.text p {
+  text-align: justify;
+  margin-bottom: 1em;
+  text-indent: 2em;
+}
+
+aside section {
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  display: none;
+  border-width: 2px;
+}
+
+#color-picker-input {
+  display: none;
+}
+
+#color-picker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: white;
+}
+
+#color-picker:hover {
+  cursor: pointer;
+}
+
+#color-picker:active {
+  box-shadow: 1px 1px gray;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+#section-font-size input {
+  height: 6px;
+  width: 87%;
+  display: inline-block;
+}
+
+#section-font-size span {
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+#section-line-height span {
+  margin: 0 16px 0 16px;
+  width: 32px;
+  display: inline-block;
+  text-align: center;
+}
+
+#section-line-height i {
+  cursor: pointer;
+}
+
+#section-line-height i:active {
+  opacity: 0.7;
+}
+
+#section-line-height p {
+  margin-top: 8px;
+}
+
+#select-font-family {
+  margin-top: 8px;
+}
