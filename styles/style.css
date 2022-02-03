@@ -1,77 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+:root {
+    --primary-color: #053742;
+    --secondary-color: #A2DBFA;
+    --primary-variant: #39A2DB;
+    --secondary-variant: #E8F0F2;
+    --mobile-title-size: 42px;
+    --mobile-subtitle-size: 26px;
+    --mobile-sections-margin: 16px;
+    --mobile-text-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #0D1B2A;
-  color: #E0E1DD;
-  padding: 5%;
+  font-family: 'Zen Kurenaido', sans-serif;
+  background-color: var(--secondary-color);
 }
 
-h1.meu-nome {
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
+.header {
+  overflow: hidden;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  padding: 16px;
+  background-color: var(--primary-color);
 }
 
-h3 {
-    margin-bottom: 0px;
+.header a {
+  text-decoration: none;
+  color: var(--primary-variant);
 }
 
-hr{
-    margin-bottom: 18px;
+.main {
+  margin-top: 110px;
 }
 
-#foto-perfil {
-  border-radius: 50%;
-  padding: 5px;
-  background-color: whitesmoke;
-  height: 250px;
-  float: left;
+section {
+  margin: var(--mobile-sections-margin);
+  margin-top: 16px;
 }
 
-.image-container{
-    height: 260px;
-    position: relative;
+section p, section li, section ul {
+  font-size: var(--mobile-text-size);
+  margin-top: 8px;
 }
 
-.descricao{
-    position: absolute;
-    top: 10%;
-    left: 250px;    
+section h2 {
+  margin-top: 8px;;
 }
 
-.destaque{
-    font-size: large;
-    color: #778DA9;
+.title {
+  font-family: 'Short Stack', cursive;
+  color: var(--primary-color);
+  line-height: 1.2;
+
 }
 
-.small-size{
-    font-size: 18px;
-}
-.medium-size{
-    font-size: 24px;
-}
-.large-size{
-    font-size: 28px;
+.title span {
+  display: block;
+  font-size: var(--mobile-title-size);
 }
 
-a{
-    text-decoration: none;
-    color: #778DA9;
+.title span:last-child {
+  font-size: var(--mobile-subtitle-size);
 }
 
-a:hover{
-    color: #415A77;
+.abilities {
+  
 }
 
-ul li:nth-child(odd){
-    list-style: square;
-    color: #778DA9;
+.abilities h2 {
+
 }
 
-/* div {
-    border: 2px solid magenta;
-} */
+.abilities li {
+  list-style: none;
 
+}
 
 
 
