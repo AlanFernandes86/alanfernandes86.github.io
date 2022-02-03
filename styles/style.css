@@ -6,9 +6,9 @@
     --secondary-color: #A2DBFA;
     --primary-variant: #39A2DB;
     --secondary-variant: #E8F0F2;
-    --mobile-title-size: 42px;
-    --mobile-subtitle-size: 26px;
-    --mobile-sections-margin: 16px;
+    --mobile-title-size: 38px;
+    --mobile-subtitle-size: 22px;
+    --mobile-sections-padding: 16px;
     --mobile-text-size: 20px;
 }
 
@@ -21,7 +21,6 @@
 
 body {
   font-family: 'Zen Kurenaido', sans-serif;
-  background-color: var(--secondary-color);
 }
 
 .header {
@@ -40,12 +39,11 @@ body {
 }
 
 .main {
-  margin-top: 110px;
+  
 }
 
-section {
-  margin: var(--mobile-sections-margin);
-  margin-top: 16px;
+section, footer {
+  padding: var(--mobile-sections-margin);
 }
 
 section p, section li, section ul {
@@ -60,12 +58,20 @@ section h2 {
 .title {
   font-family: 'Short Stack', cursive;
   color: var(--primary-color);
+  background-color: var(--secondary-color);
   line-height: 1.2;
-
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 10s;
 }
+
 
 .title span {
   display: block;
+  transition: font-size 10s;
   font-size: var(--mobile-title-size);
 }
 
@@ -83,6 +89,10 @@ section h2 {
 
 .abilities li {
   list-style: none;
+
+}
+
+footer {
 
 }
 
