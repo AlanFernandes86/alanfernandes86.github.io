@@ -9,13 +9,14 @@ __template.innerHTML = `<section class="abilities">
   <li>HTML5</li>
   <li>CSS3</li>
   <li>Javascript</li>
+  <li>React</li>
+  <li>Redux</li>
 </ul>
 <h2>Me aprimorando em</h2>
 <ul>
   <li>Inglês</li>
   <li>Autogestão</li>
   <li>Criatividade</li>
-  <li>React</li>
   <li>Node JS</li>
   <li>Mongo DB</li>
 </ul>

@@ -251,7 +251,7 @@ section h2 {
 }
 
 .abilities {
-  
+  margin-top: 100px;
 }
 
 .abilities h2 {
@@ -261,6 +261,18 @@ section h2 {
 .abilities li {
   list-style: none;
 
+}
+
+.portfolio {
+  margin-top: 100px;
+}
+
+.contacts {
+  margin-top: 100px;
+}
+
+.social-media {
+  margin-top: 100px;
 }
 
 footer {

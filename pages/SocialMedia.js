@@ -1,6 +1,6 @@
 const __template = document.createElement('template');
 __template.innerHTML = `<section class="social-media">
-<h2>Contatos</h2>
+<h2>Redes Sociais</h2>
 </section>`;
 
 class SocialMedia extends HTMLElement {

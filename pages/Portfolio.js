@@ -1,10 +1,12 @@
 const __template = document.createElement('template');
-__template.innerHTML = `<section class="portfolio-personal">
+__template.innerHTML = `<section class="portfolio">
+<div class="portfolio-personal">
 <h2>Projetos pessoais</h2>
-</section>
-<section class="portfolio-courses">
+</div>
+<div class="portfolio-courses">
   <h2>Projetos desenvolvidos na Trybe</h2>
-</section>`;
+</div>
+</section>`
 
 class Portfolio extends HTMLElement {
   connectedCallback() {

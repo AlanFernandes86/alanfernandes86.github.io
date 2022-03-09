@@ -1,10 +1,6 @@
 const __template = document.createElement('template');
-__template.innerHTML = `<section class="section-title">
-<h1 class="title">
-  <span>Olá. </span>
-  <span>Eu sou Alan.</span>
-  <span>Desenvolvedor Web.</span>
-</h1>
+__template.innerHTML = `<section class="contacts">
+<h2>Contato</h2>
 </section>`;
 
 class Contacts extends HTMLElement {
